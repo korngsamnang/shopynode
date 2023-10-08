@@ -1,5 +1,7 @@
 import express from "express";
-import "dotenv/config.js";
+import dotenv from "dotenv";
+
+dotenv.config({ path: "./frontend/.env" });
 import morgan from "morgan";
 import { fileURLToPath } from "url";
 import path from "path";
