@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "5fcda8a1f4a3c60d1cde7746",
+    "user": "5fcda8a1f4a3c60d1cde7741",
+    "product": "5fcdbe1af4a3c60d1cde7746",
+    "rating": 4.5,
+    "review": "This is a great product. I really like it!",
+    "date": "2023-09-28T12:00:00Z"
+  },
+  {
+    "_id": "5fcda8b4f4a3c60d1cde7747",
+    "user": "5fcda8b4f4a3c60d1cde7742",
+    "product": "5fcdbe2af4a3c60d1cde7747",
+    "rating": 4.0,
+    "review": "Good value for the price.",
+    "date": "2023-09-28T13:30:00Z"
+  },
+  {
+    "_id": "5fcda8c7f4a3c60d1cde7748",
+    "user": "5fcda8c7f4a3c60d1cde7743",
+    "product": "5fcdbe3af4a3c60d1cde7748",
+    "rating": 3.8,
+    "review": "It's okay, but I expected better.",
+    "date": "2023-09-28T15:15:00Z"
+  },
+  {
+    "_id": "5fcda8d9f4a3c60d1cde7749",
+    "user": "5fcda8d9f4a3c60d1cde7744",
+    "product": "5fcdbe4af4a3c60d1cde7749",
+    "rating": 4.7,
+    "review": "Highly recommended!",
+    "date": "2023-09-28T16:45:00Z"
+  },
+  {
+    "_id": "5fcda8ebf4a3c60d1cde774a",
+    "user": "5fcda8ebf4a3c60d1cde7745",
+    "product": "5fcdbe5af4a3c60d1cde774a",
+    "rating": 4.2,
+    "review": "Decent product, but could be improved.",
+    "date": "2023-09-28T18:20:00Z"
+  }
+]

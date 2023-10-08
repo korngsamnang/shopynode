@@ -1,0 +1,134 @@
+[
+  {
+    "_id": "5fcdbe1af4a3c60d1cde7746",
+    "productName": "Product 1",
+    "image": "airpods.jpg",
+    "brand": "Brand A",
+    "description": "This is product 1 description.",
+    "rating": 4.2,
+    "numReviews": 25,
+    "price": 29.99,
+    "stockQuantity": 50
+  },
+  {
+    "_id": "5fcdbe2af4a3c60d1cde7747",
+    "productName": "Product 2",
+    "image": "alexa.jpg",
+    "brand": "Brand B",
+    "description": "This is product 2 description.",
+    "rating": 4.5,
+    "numReviews": 18,
+    "price": 39.99,
+    "stockQuantity": 75
+  },
+  {
+    "_id": "5fcdbe3af4a3c60d1cde7748",
+    "productName": "Product 3",
+    "image": "camera.jpg",
+    "brand": "Brand C",
+    "description": "This is product 3 description.",
+    "rating": 3.9,
+    "numReviews": 30,
+    "price": 19.99,
+    "stockQuantity": 60
+  },
+  {
+    "_id": "5fcdbe4af4a3c60d1cde7749",
+    "productName": "Product 4",
+    "image": "ipad.jpg",
+    "brand": "Brand A",
+    "description": "This is product 4 description.",
+    "rating": 4.7,
+    "numReviews": 22,
+    "price": 49.99,
+    "stockQuantity": 40
+  },
+  {
+    "_id": "5fcdbe5af4a3c60d1cde774a",
+    "productName": "Product 5",
+    "image": "mouse.jpg",
+    "brand": "Brand B",
+    "description": "This is product 5 description.",
+    "rating": 4.0,
+    "numReviews": 15,
+    "price": 34.99,
+    "stockQuantity": 55
+  },
+  {
+    "_id": "5fcdbe6af4a3c60d1cde774b",
+    "productName": "Product 6",
+    "image": "phone.jpg",
+    "brand": "Brand C",
+    "description": "This is product 6 description.",
+    "rating": 4.9,
+    "numReviews": 28,
+    "price": 59.99,
+    "stockQuantity": 65
+  },
+  {
+    "_id": "5fcdbe7af4a3c60d1cde774c",
+    "productName": "Product 7",
+    "image": "sample.jpg",
+    "brand": "Brand A",
+    "description": "This is product 7 description.",
+    "rating": 4.1,
+    "numReviews": 20,
+    "price": 44.99,
+    "stockQuantity": 70
+  },
+  {
+    "_id": "5fcdbe8af4a3c60d1cde774d",
+    "productName": "Product 8",
+    "image": "sample.jpg",
+    "brand": "Brand B",
+    "description": "This is product 8 description.",
+    "rating": 3.8,
+    "numReviews": 14,
+    "price": 29.99,
+    "stockQuantity": 45
+  },
+  {
+    "_id": "5fcdbe9af4a3c60d1cde774e",
+    "productName": "Product 9",
+    "image": "sample.jpg",
+    "brand": "Brand C",
+    "description": "This is product 9 description.",
+    "rating": 4.4,
+    "numReviews": 26,
+    "price": 38.99,
+    "stockQuantity": 80
+  },
+  {
+    "_id": "5fcdbeaaf4a3c60d1cde774f",
+    "productName": "Product 10",
+    "image": "sample.jpg",
+    "brand": "Brand A",
+    "description": "This is product 10 description.",
+    "rating": 4.3,
+    "numReviews": 19,
+    "price": 42.99,
+    "stockQuantity": 35
+  },
+  {
+    "_id": "5fcdbebbf4a3c60d1cde7750",
+    "productName": "Product 11",
+    "image": "sample.jpg",
+    "brand": "Brand B",
+    "description": "This is product 11 description.",
+    "rating": 4.6,
+    "numReviews": 23,
+    "price": 54.99,
+    "stockQuantity": 90
+  },
+  {
+    "_id": "5fcdbeccf4a3c60d1cde7751",
+    "productName": "Product 12",
+    "image": "sample.jpg",
+    "brand": "Brand C",
+    "description": "This is product 12 description.",
+    "rating": 4.2,
+    "numReviews": 17,
+    "price": 31.99,
+    "stockQuantity": 58
+  }
+]

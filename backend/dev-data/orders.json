@@ -1,0 +1,252 @@
+[
+  {
+    "_id": "5fcdbe1af4a3c60d1cde7752",
+    "user": "5fcda8a1f4a3c60d1cde7741",
+    "orderItems": [
+      {
+        "product": "5fcdbe1af4a3c60d1cde7746",
+        "quantity": 2
+      },
+      {
+        "product": "5fcdbe2af4a3c60d1cde7747",
+        "quantity": 1
+      }
+    ],
+    "shippingAddress": {
+      "address": "123 Main St",
+      "city": "Exampleville",
+      "postalCode": "12345",
+      "country": "Exampleland"
+    },
+    "itemsPrice": 99.98,
+    "shippingPrice": 10.00,
+    "totalPrice": 109.98,
+    "isPaid": true,
+    "paidAt": "2023-09-28T10:30:00Z",
+    "isDelivered": false
+  },
+  {
+    "_id": "5fcdbe2af4a3c60d1cde7753",
+    "user": "5fcda8b4f4a3c60d1cde7742",
+    "orderItems": [
+      {
+        "product": "5fcdbe3af4a3c60d1cde7748",
+        "quantity": 3
+      },
+      {
+        "product": "5fcdbe4af4a3c60d1cde7749",
+        "quantity": 1
+      }
+    ],
+    "shippingAddress": {
+      "address": "456 Elm St",
+      "city": "Sampletown",
+      "postalCode": "67890",
+      "country": "Sampleland"
+    },
+    "itemsPrice": 179.96,
+    "shippingPrice": 15.00,
+    "totalPrice": 194.96,
+    "isPaid": true,
+    "paidAt": "2023-09-28T11:45:00Z",
+    "isDelivered": true,
+    "deliveredAt": "2023-09-28T14:20:00Z"
+  },
+  {
+    "_id": "5fcdbe3af4a3c60d1cde7754",
+    "user": "5fcda8c7f4a3c60d1cde7743",
+    "orderItems": [
+      {
+        "product": "5fcdbe5af4a3c60d1cde774a",
+        "quantity": 1
+      },
+      {
+        "product": "5fcdbe6af4a3c60d1cde774b",
+        "quantity": 2
+      }
+    ],
+    "shippingAddress": {
+      "address": "789 Oak St",
+      "city": "Testville",
+      "postalCode": "54321",
+      "country": "Testland"
+    },
+    "itemsPrice": 164.97,
+    "shippingPrice": 12.00,
+    "totalPrice": 176.97,
+    "isPaid": false,
+    "isDelivered": false
+  },
+  {
+    "_id": "5fcdbe4af4a3c60d1cde7755",
+    "user": "5fcda8d9f4a3c60d1cde7744",
+    "orderItems": [
+      {
+        "product": "5fcdbe7af4a3c60d1cde774c",
+        "quantity": 1
+      },
+      {
+        "product": "5fcdbe8af4a3c60d1cde774d",
+        "quantity": 3
+      }
+    ],
+    "shippingAddress": {
+      "address": "101 Pine St",
+      "city": "Demo City",
+      "postalCode": "98765",
+      "country": "Demoland"
+    },
+    "itemsPrice": 134.96,
+    "shippingPrice": 8.00,
+    "totalPrice": 142.96,
+    "isPaid": true,
+    "paidAt": "2023-09-28T09:15:00Z",
+    "isDelivered": true,
+    "deliveredAt": "2023-09-28T12:40:00Z"
+  },
+  {
+    "_id": "5fcdbe5af4a3c60d1cde7756",
+    "user": "5fcda8ebf4a3c60d1cde7745",
+    "orderItems": [
+      {
+        "product": "5fcdbe9af4a3c60d1cde774e",
+        "quantity": 2
+      }
+    ],
+    "shippingAddress": {
+      "address": "222 Cedar St",
+      "city": "Sampleville",
+      "postalCode": "76543",
+      "country": "Sampleland"
+    },
+    "itemsPrice": 77.98,
+    "shippingPrice": 7.00,
+    "totalPrice": 84.98,
+    "isPaid": true,
+    "paidAt": "2023-09-28T08:30:00Z",
+    "isDelivered": true,
+    "deliveredAt": "2023-09-28T13:55:00Z"
+  },
+  {
+    "_id": "5fcdbe6af4a3c60d1cde7757",
+    "user": "5fcda8a1f4a3c60d1cde7741",
+    "orderItems": [
+      {
+        "product": "5fcdbe10f4a3c60d1cde7751",
+        "quantity": 2
+      },
+      {
+        "product": "5fcdbe11f4a3c60d1cde7750",
+        "quantity": 1
+      }
+    ],
+    "shippingAddress": {
+      "address": "123 Main St",
+      "city": "Exampleville",
+      "postalCode": "12345",
+      "country": "Exampleland"
+    },
+    "itemsPrice": 109.97,
+    "shippingPrice": 9.00,
+    "totalPrice": 118.97,
+    "isPaid": true,
+    "paidAt": "2023-09-28T10:30:00Z",
+    "isDelivered": false
+  },
+  {
+    "_id": "5fcdbe7af4a3c60d1cde7758",
+    "user": "5fcda8b4f4a3c60d1cde7742",
+    "orderItems": [
+      {
+        "product": "5fcdbe12f4a3c60d1cde7752",
+        "quantity": 1
+      },
+      {
+        "product": "5fcdbe13f4a3c60d1cde7753",
+        "quantity": 3
+      }
+    ],
+    "shippingAddress": {
+      "address": "456 Elm St",
+      "city": "Sampletown",
+      "postalCode": "67890",
+      "country": "Sampleland"
+    },
+    "itemsPrice": 149.95,
+    "shippingPrice": 14.00,
+    "totalPrice": 163.95,
+    "isPaid": false,
+    "isDelivered": false
+  },
+  {
+    "_id": "5fcdbe8af4a3c60d1cde7759",
+    "user": "5fcda8c7f4a3c60d1cde7743",
+    "orderItems": [
+      {
+        "product": "5fcdbe14f4a3c60d1cde7754",
+        "quantity": 2
+      },
+      {
+        "product": "5fcdbe15f4a3c60d1cde7755",
+        "quantity": 2
+      }
+    ],
+    "shippingAddress": {
+      "address": "789 Oak St",
+      "city": "Testville",
+      "postalCode": "54321",
+      "country": "Testland"
+    },
+    "itemsPrice": 259.96,
+    "shippingPrice": 20.00,
+    "totalPrice": 279.96,
+    "isPaid": false,
+    "isDelivered": false
+  },
+  {
+    "_id": "5fcdbe9af4a3c60d1cde775a",
+    "user": "5fcda8d9f4a3c60d1cde7744",
+    "orderItems": [
+      {
+        "product": "5fcdbe16f4a3c60d1cde7756",
+        "quantity": 1
+      }
+    ],
+    "shippingAddress": {
+      "address": "101 Pine St",
+      "city": "Demo City",
+      "postalCode": "98765",
+      "country": "Demoland"
+    },
+    "itemsPrice": 49.99,
+    "shippingPrice": 5.00,
+    "totalPrice": 54.99,
+    "isPaid": true,
+    "paidAt": "2023-09-28T09:15:00Z",
+    "isDelivered": true,
+    "deliveredAt": "2023-09-28T12:40:00Z"
+  },
+  {
+    "_id": "5fcdbeaaf4a3c60d1cde775b",
+    "user": "5fcda8ebf4a3c60d1cde7745",
+    "orderItems": [
+      {
+        "product": "5fcdbe17f4a3c60d1cde7757",
+        "quantity": 3
+      }
+    ],
+    "shippingAddress": {
+      "address": "222 Cedar St",
+      "city": "Sampleville",
+      "postalCode": "76543",
+      "country": "Sampleland"
+    },
+    "itemsPrice": 89.97,
+    "shippingPrice": 10.00,
+    "totalPrice": 99.97,
+    "isPaid": true,
+    "paidAt": "2023-09-28T08:30:00Z",
+    "isDelivered": true,
+    "deliveredAt": "2023-09-28T13:55:00Z"
+  }
+]
