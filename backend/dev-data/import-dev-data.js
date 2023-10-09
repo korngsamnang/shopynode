@@ -1,5 +1,7 @@
 import fs from "fs";
-import "dotenv/config.js";
+import dotenv from "dotenv";
+
+dotenv.config({ path: "./frontend/.env" });
 import path from "path";
 import { fileURLToPath } from "url";
 import User from "../models/userModel.js";
