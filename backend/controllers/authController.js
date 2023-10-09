@@ -59,7 +59,7 @@ export const login = asyncHandler(async (req, res, next) => {
 });
 
 export const logout = (req, res) => {
-    res.cookie("jwt", "", {
+    res.cookie("token", "", {
         expires: new Date(Date.now() + 10 * 1000),
         httpOnly: true,
     });
@@ -74,8 +74,8 @@ export const protect = asyncHandler(async (req, res, next) => {
     ) {
         // Bearer token
         token = req.headers.authorization.split(" ")[1];
-    } else if (req.cookies.jwt) {
-        token = req.cookies.jwt;
+    } else if (req.cookies.token) {
+        token = req.cookies.token;
     }
 
     if (!token) {
