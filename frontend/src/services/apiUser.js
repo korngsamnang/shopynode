@@ -2,7 +2,7 @@ import axios from "axios";
 
 const api = axios.create({
     baseURL: `${import.meta.env.VITE_BASE_URL}/users`,
-    // withCredentials: true,
+    withCredentials: true,
 });
 
 export const getAllUsers = async () => {
@@ -32,11 +32,11 @@ export const updateMe = async ({ name, email, password }) => {
     }
 };
 
-// export const deleteUser = async id => {
-//     try {
-//         const { data } = await api.delete(`/${id}`);
-//         return data;
-//     } catch (err) {
-//         throw new Error(err?.response?.data?.message);
-//     }
-// };
+export const deleteUser = async id => {
+    try {
+        const { data } = await api.delete(`/${id}`);
+        return data;
+    } catch (err) {
+        throw new Error(err?.response?.data?.message);
+    }
+};

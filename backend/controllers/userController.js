@@ -76,3 +76,22 @@ export const updateMe = asyncHandler(async (req, res, next) => {
         },
     });
 });
+
+//@desc delete user
+//@route DELETE /api/users/:id
+//@access Private/Admin
+export const deleteUser = asyncHandler(async (req, res, next) => {
+    const user = await User.findById(req.params.id).select("-password");
+    console.log(user);
+    if (!user) {
+        return next(new AppError("User not found", 404));
+    }
+    if (user.role === "admin") {
+        return next(new AppError("You cannot delete admin", 400));
+    }
+    await user.deleteOne({ _id: user._id });
+    res.status(200).json({
+        status: "success",
+        data: null,
+    });
+});

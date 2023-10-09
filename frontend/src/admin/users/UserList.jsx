@@ -14,19 +14,17 @@ import IconButton from "@mui/material/IconButton";
 import { Link } from "react-router-dom";
 import { useUsers } from "./useUsers.js";
 import Loading from "../../ui/Loading.jsx";
+import { useDeleteUser } from "./useDeleteUser.js";
 
 const UserList = () => {
     const { allUsers, isLoading, error } = useUsers();
-    // const handleDeleteUser = async id => {
-    //     if (window.confirm("Are you sure?")) {
-    //         try {
-    //             await deleteUser(id);
-    //             refetch();
-    //         } catch (err) {
-    //             toast.error(err?.data?.message || err.error);
-    //         }
-    //     }
-    // };
+    const { deleteUser, isDeleting } = useDeleteUser();
+
+    const handleDeleteUser = id => {
+        if (window.confirm("Are you sure?")) {
+            deleteUser(id);
+        }
+    };
 
     return (
         <>
@@ -83,9 +81,12 @@ const UserList = () => {
                                                 <IconButton
                                                     variant="danger"
                                                     aria-label="Delete"
-                                                    // onClick={() =>
-                                                    //     deleteHandler(user._id)
-                                                    // }
+                                                    onClick={() =>
+                                                        handleDeleteUser(
+                                                            user._id,
+                                                        )
+                                                    }
+                                                    disabled={isDeleting}
                                                 >
                                                     <FaTrash
                                                         style={{

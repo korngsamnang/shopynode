@@ -16,29 +16,19 @@ import IconButton from "@mui/material/IconButton";
 import { Link } from "react-router-dom";
 import { useProducts } from "../../features/products/useProducts.js";
 import { useDeleteProduct } from "./useDeleteProduct.js";
+import Loading from "../../ui/Loading.jsx";
 
 const ProductList = () => {
     const { products, isLoading } = useProducts();
     const { deleteProduct, isDeleting } = useDeleteProduct();
 
-    const handleDelete = async id => {
+    const handleDelete = id => {
         if (window.confirm("Are you sure?")) {
             deleteProduct(id);
         }
     };
 
-    // const createProductHandler = async () => {
-    //     if (window.confirm('Are you sure you want to create a new product?')) {
-    //         try {
-    //             await createProduct();
-    //             refetch();
-    //         } catch (err) {
-    //             toast.error(err?.data?.message || err.error);
-    //         }
-    //     }
-    // };
-
-    if (isLoading) return <div>Loading...</div>;
+    if (isLoading) return <Loading />;
 
     // if (error)
     //     return (

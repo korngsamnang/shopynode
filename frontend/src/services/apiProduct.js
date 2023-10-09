@@ -3,7 +3,7 @@ import axios from "axios";
 console.log(import.meta.env.VITE_BASE_URL);
 const api = axios.create({
     baseURL: `${import.meta.env.VITE_BASE_URL}/products`,
-    // withCredentials: true,
+    withCredentials: true,
 });
 
 export const getAllProducts = async () => {
