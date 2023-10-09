@@ -17,6 +17,7 @@ import { Link } from "react-router-dom";
 import { useProducts } from "../../features/products/useProducts.js";
 import { useDeleteProduct } from "./useDeleteProduct.js";
 import Loading from "../../ui/Loading.jsx";
+import Box from "@mui/material/Box";
 
 const ProductList = () => {
     const { products, isLoading } = useProducts();
@@ -40,15 +41,17 @@ const ProductList = () => {
     return (
         <Grid container spacing={2}>
             <Grid item xs={12}>
-                <Typography variant="h4">Product</Typography>
-                <Button
-                    variant="outlined"
-                    color="primary"
-                    startIcon={<FaEdit />}
-                    // onClick={createProductHandler}
-                >
-                    Create Product
-                </Button>
+                <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+                    <Typography variant="h4">Product</Typography>
+                    <Button
+                        variant="outlined"
+                        color="primary"
+                        startIcon={<FaEdit />}
+                        // onClick={createProductHandler}
+                    >
+                        Create Product
+                    </Button>
+                </Box>
             </Grid>
             <Grid item xs={12}>
                 <TableContainer component={Paper}>
