@@ -34,6 +34,10 @@ const productSchema = new mongoose.Schema(
             type: Number,
             required: [true, "Product stock quantity is required"],
         },
+        category: {
+            type: String,
+            required: [true, "Product category is required"],
+        },
     },
     {
         toJSON: { virtuals: true },

@@ -8,7 +8,8 @@
     "rating": 4.2,
     "numReviews": 25,
     "price": 29.99,
-    "stockQuantity": 50
+    "stockQuantity": 50,
+    "category": "Electronics"
   },
   {
     "_id": "5fcdbe2af4a3c60d1cde7747",
@@ -19,7 +20,8 @@
     "rating": 4.5,
     "numReviews": 18,
     "price": 39.99,
-    "stockQuantity": 75
+    "stockQuantity": 75,
+    "category": "Electronics"
   },
   {
     "_id": "5fcdbe3af4a3c60d1cde7748",
@@ -30,7 +32,8 @@
     "rating": 3.9,
     "numReviews": 30,
     "price": 19.99,
-    "stockQuantity": 60
+    "stockQuantity": 60,
+    "category": "Electronics"
   },
   {
     "_id": "5fcdbe4af4a3c60d1cde7749",
@@ -41,7 +44,8 @@
     "rating": 4.7,
     "numReviews": 22,
     "price": 49.99,
-    "stockQuantity": 40
+    "stockQuantity": 40,
+    "category": "Electronics"
   },
   {
     "_id": "5fcdbe5af4a3c60d1cde774a",
@@ -52,7 +56,8 @@
     "rating": 4.0,
     "numReviews": 15,
     "price": 34.99,
-    "stockQuantity": 55
+    "stockQuantity": 55,
+    "category": "Electronics"
   },
   {
     "_id": "5fcdbe6af4a3c60d1cde774b",
@@ -63,7 +68,8 @@
     "rating": 4.9,
     "numReviews": 28,
     "price": 59.99,
-    "stockQuantity": 65
+    "stockQuantity": 65,
+    "category": "Electronics"
   },
   {
     "_id": "5fcdbe7af4a3c60d1cde774c",
@@ -74,7 +80,8 @@
     "rating": 4.1,
     "numReviews": 20,
     "price": 44.99,
-    "stockQuantity": 70
+    "stockQuantity": 70,
+    "category": "Electronics"
   },
   {
     "_id": "5fcdbe8af4a3c60d1cde774d",
@@ -85,7 +92,8 @@
     "rating": 3.8,
     "numReviews": 14,
     "price": 29.99,
-    "stockQuantity": 45
+    "stockQuantity": 45,
+    "category": "Electronics"
   },
   {
     "_id": "5fcdbe9af4a3c60d1cde774e",
@@ -96,7 +104,8 @@
     "rating": 4.4,
     "numReviews": 26,
     "price": 38.99,
-    "stockQuantity": 80
+    "stockQuantity": 80,
+    "category": "Electronics"
   },
   {
     "_id": "5fcdbeaaf4a3c60d1cde774f",
@@ -107,7 +116,8 @@
     "rating": 4.3,
     "numReviews": 19,
     "price": 42.99,
-    "stockQuantity": 35
+    "stockQuantity": 35,
+    "category": "Electronics"
   },
   {
     "_id": "5fcdbebbf4a3c60d1cde7750",
@@ -118,7 +128,8 @@
     "rating": 4.6,
     "numReviews": 23,
     "price": 54.99,
-    "stockQuantity": 90
+    "stockQuantity": 90,
+    "category": "Electronics"
   },
   {
     "_id": "5fcdbeccf4a3c60d1cde7751",
@@ -129,6 +140,7 @@
     "rating": 4.2,
     "numReviews": 17,
     "price": 31.99,
-    "stockQuantity": 58
+    "stockQuantity": 58,
+    "category": "Electronics"
   }
 ]
