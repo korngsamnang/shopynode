@@ -18,13 +18,15 @@ const productSchema = new mongoose.Schema(
             type: String,
             required: [true, "Product description is required"],
         },
-        rating: {
+        ratingAverage: {
             type: Number,
             required: [true, "Product rating is required"],
+            default: 0,
         },
         numReviews: {
             type: Number,
             required: [true, "Product number of reviews is required"],
+            default: 0,
         },
         price: {
             type: Number,
@@ -33,6 +35,7 @@ const productSchema = new mongoose.Schema(
         stockQuantity: {
             type: Number,
             required: [true, "Product stock quantity is required"],
+            default: 0,
         },
         category: {
             type: String,

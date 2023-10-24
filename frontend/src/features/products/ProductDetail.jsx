@@ -88,7 +88,7 @@ const ProductDetail = () => {
 
                         <ListItemText>
                             <RatingBar
-                                value={product.data.product.rating}
+                                value={product.data.product.ratingAverage}
                                 text={`${product.data.product.numReviews} reviews`}
                             />
                         </ListItemText>

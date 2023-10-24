@@ -18,7 +18,7 @@ const ProductItem = ({ product }) => {
                         {product.productName}
                     </Typography>
                     <RatingBar
-                        value={product.rating}
+                        value={product.ratingAverage}
                         text={`${product.numReviews} reviews`}
                     />
                     <Typography variant="h5">{product.price} $</Typography>

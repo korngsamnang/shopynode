@@ -5,8 +5,6 @@
     "image": "airpods.jpg",
     "brand": "Brand A",
     "description": "This is product 1 description.",
-    "rating": 4.2,
-    "numReviews": 25,
     "price": 29.99,
     "stockQuantity": 50,
     "category": "Electronics"
@@ -17,8 +15,6 @@
     "image": "alexa.jpg",
     "brand": "Brand B",
     "description": "This is product 2 description.",
-    "rating": 4.5,
-    "numReviews": 18,
     "price": 39.99,
     "stockQuantity": 75,
     "category": "Electronics"
@@ -29,8 +25,6 @@
     "image": "camera.jpg",
     "brand": "Brand C",
     "description": "This is product 3 description.",
-    "rating": 3.9,
-    "numReviews": 30,
     "price": 19.99,
     "stockQuantity": 60,
     "category": "Electronics"
@@ -41,8 +35,6 @@
     "image": "ipad.jpg",
     "brand": "Brand A",
     "description": "This is product 4 description.",
-    "rating": 4.7,
-    "numReviews": 22,
     "price": 49.99,
     "stockQuantity": 40,
     "category": "Electronics"
@@ -53,8 +45,6 @@
     "image": "mouse.jpg",
     "brand": "Brand B",
     "description": "This is product 5 description.",
-    "rating": 4.0,
-    "numReviews": 15,
     "price": 34.99,
     "stockQuantity": 55,
     "category": "Electronics"
@@ -65,8 +55,6 @@
     "image": "phone.jpg",
     "brand": "Brand C",
     "description": "This is product 6 description.",
-    "rating": 4.9,
-    "numReviews": 28,
     "price": 59.99,
     "stockQuantity": 65,
     "category": "Electronics"
@@ -77,8 +65,6 @@
     "image": "sample.jpg",
     "brand": "Brand A",
     "description": "This is product 7 description.",
-    "rating": 4.1,
-    "numReviews": 20,
     "price": 44.99,
     "stockQuantity": 70,
     "category": "Electronics"
@@ -89,8 +75,6 @@
     "image": "sample.jpg",
     "brand": "Brand B",
     "description": "This is product 8 description.",
-    "rating": 3.8,
-    "numReviews": 14,
     "price": 29.99,
     "stockQuantity": 45,
     "category": "Electronics"
@@ -101,8 +85,6 @@
     "image": "sample.jpg",
     "brand": "Brand C",
     "description": "This is product 9 description.",
-    "rating": 4.4,
-    "numReviews": 26,
     "price": 38.99,
     "stockQuantity": 80,
     "category": "Electronics"
@@ -113,8 +95,6 @@
     "image": "sample.jpg",
     "brand": "Brand A",
     "description": "This is product 10 description.",
-    "rating": 4.3,
-    "numReviews": 19,
     "price": 42.99,
     "stockQuantity": 35,
     "category": "Electronics"
@@ -125,8 +105,6 @@
     "image": "sample.jpg",
     "brand": "Brand B",
     "description": "This is product 11 description.",
-    "rating": 4.6,
-    "numReviews": 23,
     "price": 54.99,
     "stockQuantity": 90,
     "category": "Electronics"
@@ -137,8 +115,6 @@
     "image": "sample.jpg",
     "brand": "Brand C",
     "description": "This is product 12 description.",
-    "rating": 4.2,
-    "numReviews": 17,
     "price": 31.99,
     "stockQuantity": 58,
     "category": "Electronics"
