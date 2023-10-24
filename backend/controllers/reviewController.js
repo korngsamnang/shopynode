@@ -50,11 +50,8 @@ export const createReview = asyncHandler(async (req, res, next) => {
 
     const productReviews = await Review.find({ product });
 
-    console.log(productReviews);
-
     productExists.numReviews = productReviews.length;
 
-    console.log(productExists.numReviews);
     productExists.ratingAverage =
         productReviews.reduce((acc, review) => review.rating + acc, 0) /
         productReviews.length;
