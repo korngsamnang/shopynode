@@ -24,7 +24,7 @@ export const getProductById = async id => {
     }
 };
 
-export const createProduct = async product => {
+export const createProduct = async ({ product }) => {
     try {
         const { data } = await api.post("/", product);
         return data;
@@ -33,7 +33,7 @@ export const createProduct = async product => {
     }
 };
 
-export const updateProduct = async (id, product) => {
+export const updateProduct = async ({ id, product }) => {
     try {
         const { data } = await api.patch(`/${id}`, product);
         return data;

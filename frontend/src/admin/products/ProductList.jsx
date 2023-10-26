@@ -47,7 +47,8 @@ const ProductList = () => {
                         variant="outlined"
                         color="primary"
                         startIcon={<FaEdit />}
-                        // onClick={createProductHandler}
+                        component={Link}
+                        to="/admin/product/create"
                     >
                         Create Product
                     </Button>

@@ -18,6 +18,8 @@ import AdminRoute from "./ui/AdminRoute.jsx";
 import ProductList from "./admin/products/ProductList.jsx";
 import OrderList from "./admin/orders/OrderList.jsx";
 import UserList from "./admin/users/UserList.jsx";
+import ProductUpdate from "./admin/products/ProductUpdate.jsx";
+import ProductCreate from "./admin/products/ProductCreate.jsx";
 
 const App = () => {
     return (
@@ -48,6 +50,14 @@ const App = () => {
                         <Route
                             path="/admin/productlist"
                             element={<ProductList />}
+                        />
+                        <Route
+                            path="/admin/product/:id/edit"
+                            element={<ProductUpdate />}
+                        />
+                        <Route
+                            path="/admin/product/create"
+                            element={<ProductCreate />}
                         />
                         <Route
                             path="/admin/orderlist"
