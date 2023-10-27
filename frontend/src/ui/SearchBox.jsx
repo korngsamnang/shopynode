@@ -1,8 +1,9 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { useState } from "react";
 
 import { alpha, InputBase, styled } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
+import { useProducts } from "../features/products/useProducts.js";
 
 const SearchIconWrapper = styled("div")(({ theme }) => ({
     padding: theme.spacing(0, 2),
@@ -46,14 +47,15 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 const SearchBox = () => {
     const navigate = useNavigate();
-    const { keyword: urlKeyword } = useParams();
+    const [searchParams] = useSearchParams();
+    const urlKeyword = searchParams.get("search") || "";
 
     const [keyword, setKeyword] = useState(urlKeyword || "");
 
     const submitHandler = e => {
         e.preventDefault();
         if (keyword) {
-            navigate(`/search/${keyword.trim()}`);
+            navigate(`/?search=${keyword.trim()}`);
             setKeyword("");
         } else {
             navigate("/");

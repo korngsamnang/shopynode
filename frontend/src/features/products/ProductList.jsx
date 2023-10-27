@@ -3,15 +3,15 @@ import Typography from "@mui/material/Typography";
 import ProductItem from "./ProductItem.jsx";
 import { useProducts } from "./useProducts.js";
 import Loading from "../../ui/Loading.jsx";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useSearchParams } from "react-router-dom";
 import Button from "@mui/material/Button";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const ProductList = () => {
-    const { keyword } = useParams();
+    const [searchParams] = useSearchParams();
+    const keyword = searchParams.get("search") || "";
     const { products, isLoading } = useProducts();
     if (isLoading) return <Loading />;
-    console.log(products);
     return (
         <>
             {keyword && (
@@ -26,13 +26,16 @@ const ProductList = () => {
                 </Button>
             )}
             <Grid container direction="row">
-                <Typography
-                    variant="h5"
-                    sx={{ marginBottom: "20px" }}
-                    color="primary"
-                >
-                    Latest Products
-                </Typography>
+                {keyword ? null : (
+                    <Typography
+                        variant="h5"
+                        sx={{ marginBottom: "20px" }}
+                        color="primary"
+                    >
+                        Latest Products
+                    </Typography>
+                )}
+
                 <Grid container spacing={3}>
                     {products.data.products.map(product => (
                         <Grid item xs={12} sm={6} lg={3} key={product._id}>

@@ -66,7 +66,6 @@ const App = () => {
                         <Route path="/admin/users" element={<UserList />} />
                     </Route>
                     <Route index path="/" element={<Home />} />
-                    <Route path="/search/:keyword" element={<Home />} />
                     <Route path="/product/:id" element={<ProductDetail />} />
                     <Route path="/cart" element={<ShoppingCart />} />
                     <Route path="/login" element={<LoginForm />} />
