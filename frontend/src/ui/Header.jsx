@@ -21,6 +21,7 @@ import { Link } from "react-router-dom";
 import { useCart } from "../contexts/CartContext.jsx";
 import { useLogout } from "../features/authentication/useLogout.js";
 import { useUser } from "../features/authentication/useUser.js";
+import SearchBox from "./SearchBox.jsx";
 
 const Search = styled("div")(({ theme }) => ({
     position: "relative",
@@ -128,14 +129,15 @@ const Header = () => {
                         </Box>
                     </Box>
 
-                    <Box sx={{ mr: 1.5, flexGrow: 0.1 }}>
-                        <Search>
-                            <SearchIconWrapper>
-                                <SearchIcon />
-                            </SearchIconWrapper>
-                            <StyledInputBase placeholder="Search products..." />
-                        </Search>
-                    </Box>
+                    {/*<Box sx={{ mr: 1.5, flexGrow: 0.1 }}>*/}
+                    {/*    <Search>*/}
+                    {/*        <SearchIconWrapper>*/}
+                    {/*            <SearchIcon />*/}
+                    {/*        </SearchIconWrapper>*/}
+                    {/*        <StyledInputBase placeholder="Search products..." />*/}
+                    {/*    </Search>*/}
+                    {/*</Box>*/}
+                    <SearchBox />
 
                     <Typography component={Link} to="/cart">
                         <IconButton sx={{ marginRight: user ? "10px" : "" }}>

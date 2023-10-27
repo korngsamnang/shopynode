@@ -6,9 +6,9 @@ const api = axios.create({
     withCredentials: true,
 });
 
-export const getAllProducts = async () => {
+export const getAllProducts = async keyword => {
     try {
-        const { data } = await api.get("/");
+        const { data } = await api.get(`/?search=${keyword}`);
         return data;
     } catch (err) {
         throw new Error(err?.response?.data?.message);

@@ -6,8 +6,16 @@ import AppError from "../utils/appError.js";
 //@route GET /api/products
 //@access Public
 export const getAllProducts = asyncHandler(async (req, res) => {
-    const products = await Product.find({});
+    const searchKeyword = req.query.search;
+    const filter = searchKeyword
+        ? {
+              productName: {
+                  $regex: new RegExp(searchKeyword, "i"),
+              },
+          }
+        : {};
 
+    const products = await Product.find(filter);
     res.status(200).json({
         status: "success",
         results: products.length,
