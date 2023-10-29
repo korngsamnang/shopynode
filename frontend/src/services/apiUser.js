@@ -23,6 +23,15 @@ export const getUserById = async id => {
     }
 };
 
+export const updateUser = async ({ id, name, email, role }) => {
+    try {
+        const { data } = await api.patch(`/${id}`, { name, email, role });
+        return data;
+    } catch (err) {
+        throw new Error(err?.response?.data?.message);
+    }
+};
+
 export const updateMe = async ({ name, email, password }) => {
     try {
         const { data } = await api.patch("/me", { name, email, password });

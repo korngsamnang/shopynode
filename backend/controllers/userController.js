@@ -36,23 +36,26 @@ export const getUserById = asyncHandler(async (req, res, next) => {
 //@desc update user
 //@route PUT /api/users/:id
 //@access Private/Admin
-// export const updateUser = asyncHandler(async (req, res, next) => {
-//     const user = await User.findById(req.params.id).select("-password");
-//
-//     if (!user) {
-//         return next(new AppError("User not found", 404));
-//     }
-//     const { name, email } = req.body;
-//     user.name = name || user.name;
-//     user.email = email || user.email;
-//
-//     res.status(200).json({
-//         status: "success",
-//         data: {
-//             user,
-//         },
-//     });
-// });
+export const updateUser = asyncHandler(async (req, res, next) => {
+    const user = await User.findById(req.params.id).select("-password");
+
+    if (!user) {
+        return next(new AppError("User not found", 404));
+    }
+    const { name, email, role } = req.body;
+    user.name = name || user.name;
+    user.email = email || user.email;
+    user.role = role || user.role;
+
+    const updatedUser = await user.save();
+
+    res.status(200).json({
+        status: "success",
+        data: {
+            updatedUser,
+        },
+    });
+});
 
 //@desc update me
 //@route PUT /api/users/me

@@ -20,6 +20,7 @@ import OrderList from "./admin/orders/OrderList.jsx";
 import UserList from "./admin/users/UserList.jsx";
 import ProductUpdate from "./admin/products/ProductUpdate.jsx";
 import ProductCreate from "./admin/products/ProductCreate.jsx";
+import UpdateUser from "./admin/users/UpdateUser.jsx";
 
 const App = () => {
     return (
@@ -64,6 +65,10 @@ const App = () => {
                             element={<OrderList />}
                         />
                         <Route path="/admin/users" element={<UserList />} />
+                        <Route
+                            path="/admin/user/:id/edit"
+                            element={<UpdateUser />}
+                        />
                     </Route>
                     <Route index path="/" element={<Home />} />
                     <Route path="/product/:id" element={<ProductDetail />} />
