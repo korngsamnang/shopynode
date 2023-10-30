@@ -6,6 +6,7 @@ import Loading from "../../ui/Loading.jsx";
 import { Link, useParams, useSearchParams } from "react-router-dom";
 import Button from "@mui/material/Button";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import Paginate from "../../ui/Paginate.jsx";
 
 const ProductList = () => {
     const [searchParams] = useSearchParams();
@@ -42,13 +43,12 @@ const ProductList = () => {
                             <ProductItem product={product} />
                         </Grid>
                     ))}
-                    {/*<Grid item xs={12}>*/}
-                    {/*    <Paginate*/}
-                    {/*        pages={pages}*/}
-                    {/*        page={page}*/}
-                    {/*        keyword={keyword ? keyword : ""}*/}
-                    {/*    />*/}
-                    {/*</Grid>*/}
+                    <Grid item xs={12} className="flex justify-center pb-8">
+                        <Paginate
+                            count={products.totalPages}
+                            page={products.currentPage}
+                        />
+                    </Grid>
                 </Grid>
             </Grid>
         </>

@@ -7,6 +7,9 @@ import AppError from "../utils/appError.js";
 //@access Public
 export const getAllProducts = asyncHandler(async (req, res) => {
     const searchKeyword = req.query.search;
+    const page = Number(req.query.page) || 1;
+    const limit = Number(req.query.limit) || 100;
+    const skip = (page - 1) * limit;
     const filter = searchKeyword
         ? {
               productName: {
@@ -15,10 +18,14 @@ export const getAllProducts = asyncHandler(async (req, res) => {
           }
         : {};
 
-    const products = await Product.find(filter);
+    const totalProducts = await Product.countDocuments(filter);
+
+    const products = await Product.find(filter).limit(limit).skip(skip);
     res.status(200).json({
         status: "success",
         results: products.length,
+        currentPage: page,
+        totalPages: Math.ceil(totalProducts / limit),
         data: {
             products,
         },
