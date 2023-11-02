@@ -10,6 +10,8 @@ import {
     Select,
     TextareaAutosize,
 } from "@mui/material";
+import RemoveIcon from "@mui/icons-material/Remove";
+import AddIcon from "@mui/icons-material/Add";
 import Message from "../../ui/Message.jsx";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
@@ -25,6 +27,7 @@ import { useState } from "react";
 import { useCreateReview } from "../reviews/useCreateReview.js";
 import Loading from "../../ui/Loading.jsx";
 import LoadingMini from "../../ui/LaodingMini.jsx";
+import IconButton from "@mui/material/IconButton";
 
 const ProductDetail = () => {
     const { product, isLoading } = useProductDetail();
@@ -56,6 +59,18 @@ const ProductDetail = () => {
     const handleAddToCart = (product, qty) => {
         addToCart(product.data.product, qty);
         navigate("/cart");
+    };
+
+    const decrementQty = () => {
+        if (qty > 1) {
+            setQty(qty - 1);
+        }
+    };
+
+    const incrementQty = () => {
+        if (qty < product.data.product.stockQuantity) {
+            setQty(qty + 1);
+        }
     };
 
     if (isLoading) return <Loading />;
@@ -111,30 +126,28 @@ const ProductDetail = () => {
                         <ListItem>
                             <ListItemText
                                 secondary={
-                                    <FormControl>
-                                        <InputLabel>Quantity</InputLabel>
-                                        <Select
-                                            value={qty}
-                                            onChange={e =>
-                                                setQty(e.target.value)
-                                            }
-                                            variant="standard"
+                                    <div
+                                        style={{
+                                            display: "flex",
+                                            alignItems: "center",
+                                        }}
+                                    >
+                                        <IconButton
+                                            aria-label="Remove"
+                                            onClick={decrementQty}
                                         >
-                                            {[
-                                                ...Array(
-                                                    product.data.product
-                                                        .stockQuantity > 5
-                                                        ? 5
-                                                        : product.data.product
-                                                              .stockQuantity,
-                                                ).keys(),
-                                            ].map(q => (
-                                                <MenuItem key={q} value={q + 1}>
-                                                    {q + 1} items
-                                                </MenuItem>
-                                            ))}
-                                        </Select>
-                                    </FormControl>
+                                            <RemoveIcon />
+                                        </IconButton>
+                                        <span style={{ margin: "0 10px" }}>
+                                            {qty} items
+                                        </span>
+                                        <IconButton
+                                            aria-label="Add"
+                                            onClick={incrementQty}
+                                        >
+                                            <AddIcon />
+                                        </IconButton>
+                                    </div>
                                 }
                             />
                         </ListItem>

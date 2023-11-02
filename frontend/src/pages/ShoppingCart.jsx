@@ -26,6 +26,8 @@ import { useCart } from "../contexts/CartContext.jsx";
 import MenuItem from "@mui/material/MenuItem";
 import { FaTrash } from "react-icons/fa";
 import { useUser } from "../features/authentication/useUser.js";
+import RemoveIcon from "@mui/icons-material/Remove.js";
+import AddIcon from "@mui/icons-material/Add.js";
 
 const ShoppingCart = () => {
     const { cart, addToCart, removeFromCart } = useCart();
@@ -79,24 +81,30 @@ const ShoppingCart = () => {
                                     }
                                     secondary={`Price: $${item.price}`}
                                 />
-                                <Select
-                                    value={item.qty}
-                                    onChange={e =>
-                                        addToCart(item, e.target.value)
-                                    }
+
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                    }}
                                 >
-                                    {Array.from(
-                                        { length: item.stockQuantity },
-                                        (_, index) => (
-                                            <MenuItem
-                                                key={index + 1}
-                                                value={index + 1}
-                                            >
-                                                {index + 1}
-                                            </MenuItem>
-                                        ),
-                                    )}
-                                </Select>
+                                    <IconButton
+                                        aria-label="Remove"
+                                        // onClick={decrementQty}
+                                    >
+                                        <RemoveIcon />
+                                    </IconButton>
+                                    <span style={{ margin: "0 10px" }}>
+                                        {item.qty} items
+                                    </span>
+                                    <IconButton
+                                        aria-label="Add"
+                                        // onClick={incrementQty}
+                                    >
+                                        <AddIcon />
+                                    </IconButton>
+                                </div>
+
                                 <IconButton
                                     aria-label="Remove Item"
                                     onClick={() => removeFromCart(item._id)}
