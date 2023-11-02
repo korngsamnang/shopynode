@@ -26,8 +26,8 @@ import { useCart } from "../contexts/CartContext.jsx";
 import MenuItem from "@mui/material/MenuItem";
 import { FaTrash } from "react-icons/fa";
 import { useUser } from "../features/authentication/useUser.js";
-import RemoveIcon from "@mui/icons-material/Remove.js";
-import AddIcon from "@mui/icons-material/Add.js";
+import RemoveIcon from "@mui/icons-material/Remove";
+import AddIcon from "@mui/icons-material/Add";
 
 const ShoppingCart = () => {
     const { cart, addToCart, removeFromCart } = useCart();
@@ -45,6 +45,17 @@ const ShoppingCart = () => {
         } else {
             // User is not authenticated, redirect to log in with the redirect query parameter
             navigate("/login?redirect=/shipping");
+        }
+    };
+
+    const incrementQty = item => {
+        if (item.qty < item.stockQuantity) {
+            addToCart(item, item.qty + 1);
+        }
+    };
+    const decrementQty = item => {
+        if (item.qty > 1) {
+            addToCart(item, item.qty - 1);
         }
     };
 
@@ -90,7 +101,7 @@ const ShoppingCart = () => {
                                 >
                                     <IconButton
                                         aria-label="Remove"
-                                        // onClick={decrementQty}
+                                        onClick={() => decrementQty(item)}
                                     >
                                         <RemoveIcon />
                                     </IconButton>
@@ -99,7 +110,7 @@ const ShoppingCart = () => {
                                     </span>
                                     <IconButton
                                         aria-label="Add"
-                                        // onClick={incrementQty}
+                                        onClick={() => incrementQty(item)}
                                     >
                                         <AddIcon />
                                     </IconButton>
