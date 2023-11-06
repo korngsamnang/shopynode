@@ -20,10 +20,10 @@ const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, "utf-8"));
 const products = JSON.parse(
     fs.readFileSync(`${__dirname}/products.json`, "utf-8")
 );
-const reviews = JSON.parse(
-    fs.readFileSync(`${__dirname}/reviews.json`, "utf-8")
-);
-const orders = JSON.parse(fs.readFileSync(`${__dirname}/orders.json`, "utf-8"));
+// const reviews = JSON.parse(
+//     fs.readFileSync(`${__dirname}/reviews.json`, "utf-8")
+// );
+// const orders = JSON.parse(fs.readFileSync(`${__dirname}/orders.json`, "utf-8"));
 
 //IMPORT DATA INTO DB
 
@@ -31,8 +31,8 @@ const importData = async () => {
     try {
         await User.create(users, { validateBeforeSave: false });
         await Product.create(products);
-        await Review.create(reviews);
-        await Order.create(orders);
+        // await Review.create(reviews);
+        // await Order.create(orders);
 
         console.log("Data successfully loaded!");
     } catch (err) {
@@ -46,8 +46,8 @@ const deleteData = async () => {
     try {
         await User.deleteMany();
         await Product.deleteMany();
-        await Review.deleteMany();
-        await Order.deleteMany();
+        // await Review.deleteMany();
+        // await Order.deleteMany();
 
         console.log("Data successfully deleted!");
     } catch (err) {
