@@ -3,7 +3,7 @@ import Typography from "@mui/material/Typography";
 import ProductItem from "./ProductItem.jsx";
 import { useProducts } from "./useProducts.js";
 import Loading from "../../ui/Loading.jsx";
-import { Link, useParams, useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import Button from "@mui/material/Button";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import Paginate from "../../ui/Paginate.jsx";
