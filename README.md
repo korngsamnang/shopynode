@@ -1,10 +1,10 @@
-# ShopyName - E-commerce Website
+# ShopyNode - E-commerce Website
 
-Welcome to ShopyName, an e-commerce website built using the MERN (MongoDB, Express, React, Node.js) stack.
+Welcome to ShopyNode, an e-commerce website built using the MERN (MongoDB, Express, React, Node.js) stack.
 
 ## Overview
 
-ShopyName is designed to provide a platform for users to browse and purchase various products. It allows customers to
+ShopyNode is designed to provide a platform for users to browse and purchase various products. It allows customers to
 register, add items to their cart, and complete purchases. Additionally, the admin panel enables product management and
 order processing.
 
