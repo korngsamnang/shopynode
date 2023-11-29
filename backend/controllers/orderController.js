@@ -61,7 +61,6 @@ export const updateOrderToPaid = asyncHandler(async (req, res, next) => {
 });
 
 export const getMyOrders = asyncHandler(async (req, res, next) => {
-    console.log(req.user._id);
     const orders = await Order.find({ user: req.user._id });
 
     res.status(200).json({
