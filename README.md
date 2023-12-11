@@ -71,12 +71,17 @@ VITE_BASE_URL=your-backend-bash-url
 
 ```bash
 cd frontend
+
+npm install
+
 npm run dev
 ```
 
 ### Run Backend
 
 ```bash
+npm install
+
 npm run dev
 ```
 
@@ -92,3 +97,8 @@ test1234
 eva@example.com (Customer)
 test1234
 ```
+
+## Data Modeling
+
+> Data Modeling for shopynode app.
+> ![](https://github.com/korngsamnang/shopynode/assets/99709883/d5d18ce8-7988-4759-88c1-8a3e3b1cffda)
