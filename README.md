@@ -24,12 +24,13 @@ See it in action at [ShopyNode](https://shopynode-d3096ac3676f.herokuapp.com/).
 
 ## Technologies Used
 
--   **Frontend**: Vite, Reactjs
--   **Backend**: Node.js, Express.js
--   **Database**: MongoDB
+-   **Frontend**: [Vite], [React.js]
+-   **Backend**: [Node.js], [Express.js]
+-   **Database**: [MongoDB]
 -   **Other libraries**:
-    -   **Frontend**: React Query, React Router, Axios, React Toastify, MUI
-    -   **Backend**: Mongoose, Bcryptjs, JSON Web Token
+    -   **Frontend**: [React Query], [React Router], [Axios], [React Toastify],
+        [MUI]
+    -   **Backend**: [Mongoose], [Bcryptjs], [JSON Web Token]
 
 ## Features
 
@@ -102,3 +103,71 @@ test1234
 
 > Data Modeling for shopynode app.
 > ![](https://github.com/korngsamnang/shopynode/assets/99709883/d5d18ce8-7988-4759-88c1-8a3e3b1cffda)
+
+## API Endpoints
+
+-   HTTP methods /api/v1/auth
+-   HTTP methods /api/v1/users
+-   HTTP methods /api/v1/orders
+-   HTTP methods /api/v1/products
+-   HTTP methods /api/v1/reviews
+
+## Folder Structure
+
+```
+└── 📁backend
+    └── 📁config
+    └── 📁controllers
+    └── 📁dev-data
+    └── 📁models
+    └── 📁routes
+    └── 📁utils
+    └── app.js
+    └── server.js
+
+└── 📁frontend
+	└── index.html
+    └── 📁public
+        └── 📁images
+    └── 📁src
+        └── 📁admin
+            └── 📁orders
+            └── 📁products
+            └── 📁users
+        └── 📁contexts
+        └── 📁features
+            └── 📁authentication
+            └── 📁orders
+            └── 📁products
+            └── 📁reviews
+            └── 📁users
+        └── 📁pages
+        └── 📁services
+        └── 📁ui
+        └── 📁utils
+        └── App.jsx
+        └── index.css
+        └── main.jsx
+```
+
+## Deployment
+
+This project is deployed on [Heroku]. When you click to visit this project for
+the first time, there might be a delay in loading the page. This is because the
+Heroku container may have been temporarily shut down due to inactivity after 30
+minutes. Please be patient as it restarts.
+
+[React.js]: https://react.dev/
+[React Query]: https://tanstack.com/query/latest/
+[Axios]: https://axios-http.com/docs/intro/
+[MUI]: https://mui.com//
+[React Router]: https://reactrouter.com/en/main/
+[React Toastify]: https://github.com/fkhadra/react-toastify//
+[Express.js]: https://expressjs.com//
+[MongoDB]: https://www.mongodb.com//
+[Mongoose]: https://mongoosejs.com//
+[JSON Web Token]: https://jwt.io//
+[Bcryptjs]: https://www.npmjs.com/package/bcryptjs/
+[Node.js]: https://nodejs.org/en/
+[Vite]: https://vitejs.dev/
+[Heroku]: https://heroku.com/
