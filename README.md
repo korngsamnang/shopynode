@@ -1,45 +1,94 @@
-# ShopyNode - E-commerce Website
+# ShopyNode
 
-Welcome to ShopyNode, an e-commerce website built using the MERN (MongoDB, Express, React, Node.js) stack.
+## Table of Contents
 
-## Overview
+-   [Introduction](#introduction)
+-   [Technologies Used](#technologies-used)
+-   [Features](#features)
+-   [Getting Started](#getting-started)
+    -   [Installation](#installation)
+    -   [Environment Variables](#environment-variables)
+    -   [Run Frontend](#run-frontend)
+    -   [Run Backend](#run-backend)
+    -   [Sample User Logins](#sample-user-logins)
+-   [Data Modeling](#data-modeling)
+-   [API Endpoints](#api-endpoints)
+-   [Folder Structure](#folder-structure)
+-   [Deployment](#deployment)
 
-ShopyNode is designed to provide a platform for users to browse and purchase various products. It allows customers to
-register, add items to their cart, and complete purchases. Additionally, the admin panel enables product management and
-order processing.
+## Introduction
 
-## Features
-
-- **User Authentication:** Register and login to access personalized features.
-- **Product Catalog:** Browse and search for a wide range of products.
-- **Shopping Cart:** Add and manage items for purchase.
-- **Order Management:** Track orders and manage purchases.
-- **Admin Panel:** Manage products, inventory, and orders.
+This project is just like a real-world e-commerce website. It is a full-featured
+shopping cart with complete backend and frontend support using the MERN stack.
+See it in action at [ShopyNode](https://shopynode-d3096ac3676f.herokuapp.com/).
 
 ## Technologies Used
 
-- **MongoDB:** Database for storing product details, user information, and orders.
-- **Express:** Backend framework for routing and server setup.
-- **React:** Frontend framework for building a dynamic user interface.
-- **Node.js:** Backend JavaScript runtime environment.
-- **Other Libraries:** (React Query, React Router, Material UI, axios, bcrypt, jsonwebtoken, etc.)
+-   **Frontend**: Vite, Reactjs
+-   **Backend**: Node.js, Express.js
+-   **Database**: MongoDB
+-   **Other libraries**:
+    -   **Frontend**: React Query, React Router, Axios, React Toastify, MUI
+    -   **Backend**: Mongoose, Bcryptjs, JSON Web Token
 
-## Installation
+## Features
 
-To run this project locally, follow these steps:
+-   Full-featured shopping cart
+-   Product reviews and ratings
+-   Product pagination
+-   Product search feature
+-   User profile with orders
+-   Admin product management
+-   Admin user management
+-   Admin Order details page
+-   Mark orders as delivered option
+-   Checkout process (shipping, payment method, etc)
+-   Database seeder (products, users, reviews, & orders)
 
-1. Clone this repository.
-2. Install dependencies using `npm install` in both the client and server directories.
-3. Set up the MongoDB database and configure the connection.
-4. Run the server using `npm start` in the server directory.
-5. Run the client using `npm start` in the client directory.
+## Getting Started
 
-## Usage
+### Installation
 
-Describe here how users can navigate and use the features of the website. Include any specific instructions or details
-that may be important.
+```bash
+git clone https://github.com/korngsamnang/shopynode
+```
 
-## Contributing
+### Environment Variables
 
-If you'd like to contribute to this project, feel free to submit issues or pull requests. Make sure to follow the
-guidelines outlined in CONTRIBUTING.md.
+Rename the .env.example file to .env and add the following
+
+```bash
+MONGO_URI=your-mongodb-uri
+
+JWT_SECRET=your-jwt-secret
+JWT_EXPIRES_IN=your-jwt-expires-in(example: 90d)
+JWT_COOKIE_EXPIRES_IN=your-cookie-expires-in(example: 90)
+
+VITE_BASE_URL=your-backend-bash-url
+```
+
+### Run Frontend
+
+```bash
+cd frontend
+npm run dev
+```
+
+### Run Backend
+
+```bash
+npm run dev
+```
+
+### Sample User Logins
+
+```bash
+john@example.com (Admin)
+test1234
+
+bob@example.com (Customer)
+test1234
+
+eva@example.com (Customer)
+test1234
+```
