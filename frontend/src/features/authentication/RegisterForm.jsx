@@ -8,9 +8,9 @@ import { useSignup } from "./useSignup.js";
 import LoadingMini from "../../ui/LaodingMini.jsx";
 
 const RegisterForm = () => {
-    const [name, setName] = useState("Chan Tola");
-    const [email, setEmail] = useState("chantola@email.com");
-    const [password, setPassword] = useState("test1234");
+    const [name, setName] = useState();
+    const [email, setEmail] = useState();
+    const [password, setPassword] = useState();
     const { signup, isLoading: isLoadingSignup } = useSignup();
 
     const handleRegister = e => {
