@@ -2,20 +2,20 @@
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Technologies Used](#technologies-used)
-- [Features](#features)
-- [Getting Started](#getting-started)
-    - [Installation](#installation)
-    - [Environment Variables](#environment-variables)
-    - [Run Frontend](#run-frontend)
-    - [Run Backend](#run-backend)
-    - [Sample User Logins](#sample-user-logins)
-    - [Database Seeder](#database-seeder)
-- [Data Modeling](#data-modeling)
-- [API Endpoints](#api-endpoints)
-- [Folder Structure](#folder-structure)
-- [Deployment](#deployment)
+-   [Introduction](#introduction)
+-   [Technologies Used](#technologies-used)
+-   [Features](#features)
+-   [Getting Started](#getting-started)
+    -   [Installation](#installation)
+    -   [Environment Variables](#environment-variables)
+    -   [Run Frontend](#run-frontend)
+    -   [Run Backend](#run-backend)
+    -   [Sample User Logins](#sample-user-logins)
+    -   [Database Seeder](#database-seeder)
+-   [Data Modeling](#data-modeling)
+-   [API Endpoints](#api-endpoints)
+-   [Folder Structure](#folder-structure)
+-   [Deployment](#deployment)
 
 ## Introduction
 
@@ -25,27 +25,27 @@ See it in action at [ShopyNode](https://shopynode-d3096ac3676f.herokuapp.com/).
 
 ## Technologies Used
 
-- **Frontend**: [Vite], [React.js]
-- **Backend**: [Node.js], [Express.js]
-- **Database**: [MongoDB]
-- **Other libraries**:
-    - **Frontend**: [React Query], [React Router], [Axios], [React Toastify],
-      [MUI]
-    - **Backend**: [Mongoose], [Bcryptjs], [JSON Web Token]
+-   **Frontend**: [Vite], [React.js]
+-   **Backend**: [Node.js], [Express.js]
+-   **Database**: [MongoDB]
+-   **Other libraries**:
+    -   **Frontend**: [React Query], [React Router], [Axios], [React Toastify],
+        [MUI]
+    -   **Backend**: [Mongoose], [Bcryptjs], [JSON Web Token]
 
 ## Features
 
-- Full-featured shopping cart
-- Product reviews and ratings
-- Product pagination
-- Product search feature
-- User profile with orders
-- Admin product management
-- Admin user management
-- Admin Order details page
-- Mark orders as delivered option
-- Checkout process (shipping, payment method, etc)
-- Database seeder (products, users, reviews, & orders)
+-   Full-featured shopping cart
+-   Product reviews and ratings
+-   Product pagination
+-   Product search feature
+-   User profile with orders
+-   Admin product management
+-   Admin user management
+-   Admin Order details page
+-   Mark orders as delivered option
+-   Checkout process (shipping, payment method, etc)
+-   Database seeder (products, users, reviews, & orders)
 
 ## Getting Started
 
@@ -57,7 +57,7 @@ git clone https://github.com/korngsamnang/shopynode
 
 ### Environment Variables
 
-Rename the .env.example file to .env and add the following
+Rename the `.env.example` file to `.env` and add the following
 
 ```bash
 MONGO_URI=your-mongodb-uri
@@ -105,7 +105,7 @@ test1234
 ```bash
 cd backend
 node dev-data/import-dev-data.js --delete  # Delete data
-node dev-data/import-dev-data.js --import  # Import data  
+node dev-data/import-dev-data.js --import  # Import data
 ```
 
 ## Data Modeling
@@ -115,11 +115,11 @@ node dev-data/import-dev-data.js --import  # Import data
 
 ## API Endpoints
 
-- HTTP methods /api/v1/auth
-- HTTP methods /api/v1/users
-- HTTP methods /api/v1/orders
-- HTTP methods /api/v1/products
-- HTTP methods /api/v1/reviews
+-   HTTP methods /api/v1/auth
+-   HTTP methods /api/v1/users
+-   HTTP methods /api/v1/orders
+-   HTTP methods /api/v1/products
+-   HTTP methods /api/v1/reviews
 
 ## Folder Structure
 
@@ -167,29 +167,16 @@ Heroku container may have been temporarily shut down due to inactivity after 30
 minutes. Please be patient as it restarts.
 
 [React.js]: https://react.dev/
-
 [React Query]: https://tanstack.com/query/latest/
-
 [Axios]: https://axios-http.com/docs/intro/
-
 [MUI]: https://mui.com//
-
 [React Router]: https://reactrouter.com/en/main/
-
 [React Toastify]: https://github.com/fkhadra/react-toastify//
-
 [Express.js]: https://expressjs.com//
-
 [MongoDB]: https://www.mongodb.com//
-
 [Mongoose]: https://mongoosejs.com//
-
 [JSON Web Token]: https://jwt.io//
-
 [Bcryptjs]: https://www.npmjs.com/package/bcryptjs/
-
 [Node.js]: https://nodejs.org/en/
-
 [Vite]: https://vitejs.dev/
-
 [Heroku]: https://heroku.com/
