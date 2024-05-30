@@ -2,11 +2,11 @@
   "name": "shopynode",
   "version": "1.0.0",
   "description": "",
-  "main": "backend/app.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "npm install && npm install --prefix frontend && npm run build --prefix frontend && node backend/server.js",
-    "dev": "nodemon backend/server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -25,7 +25,7 @@
     "nodemon": "^3.0.1"
   },
   "engines": {
-    "node": "18.x",
-    "npm": "10.x"
+    "node": "20.13.1",
+    "npm": "10.8.0"
   }
 }

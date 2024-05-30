@@ -16,8 +16,13 @@ const createSendToken = (user, statusCode, req, res) => {
             Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
         ),
         // maxAge: process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000,
+        //httpOnly: true,
+        //secure: req.secure || req.headers["x-forwarded-proto"] === "https",
+
+        withCredentials: true,
+        sameSite: "None",
         httpOnly: true,
-        secure: req.secure || req.headers["x-forwarded-proto"] === "https",
+        secure: true,
     });
 
     user.password = undefined;
@@ -61,7 +66,10 @@ export const login = asyncHandler(async (req, res, next) => {
 export const logout = (req, res) => {
     res.cookie("token", "", {
         expires: new Date(Date.now() + 10 * 1000),
+        withCredentials: true,
+        sameSite: "None",
         httpOnly: true,
+        secure: true,
     });
     res.status(200).json({ status: "success" });
 };

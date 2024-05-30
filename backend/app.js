@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 
-dotenv.config({ path: "./frontend/.env" });
+dotenv.config();
 import morgan from "morgan";
 import { fileURLToPath } from "url";
 import path from "path";
@@ -24,10 +24,9 @@ if (process.env.NODE_ENV === "development") {
 app.use(express.json());
 app.use(cookieParser());
 
-//For development
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: process.env.FRONTEND_URL,
         credentials: true,
     })
 );
@@ -41,17 +40,9 @@ app.use("/api/v1/reviews", reviewRoutes);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-if (process.env.NODE_ENV === "production") {
-    app.use(express.static(path.join(__dirname, "../frontend/dist")));
-
-    app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname, "../frontend/dist", "index.html"));
-    });
-} else {
-    app.get("/", (req, res) => {
-        res.send("API is running...");
-    });
-}
+app.get("/", (req, res) => {
+    res.send("API is running...");
+});
 
 app.all("*", (req, res, next) => {
     next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
